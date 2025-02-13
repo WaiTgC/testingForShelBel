@@ -21,44 +21,126 @@
 
         
         @media (max-width: 634px) {
+    body {
+        margin: auto;
+        overflow-x: hidden;
+    }
+    .menu {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .navbar {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .nav-item {
+        padding: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: black;
+        text-decoration: none;
+        transition: 0.3s;
+        margin: 0;
+        display: inline;
+        white-space: nowrap;
+    }
+}
 
-            body{
-                margin:auto;
-                overflow:hidden;
-                
-;
-            }
-            .menu {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            }
+        /* @media (max-width: 634px) {
 
-            .navbar {
-            display: flex;
-            padding:0 0;
+        body{
+            margin:auto;
+            overflow:hidden;
+            
+        }
+        .logobar {
+            display:flex;
+            border-bottom: 2px solid black;
+            justify-content: space-between;
+            
+            
         }
 
-        .nav-item {
-            padding: 10px 10px;
-            font-size: 16px;
-            font-weight: 600;
+        .logofield img {
+            width: 100px;
+        }
+
+        .logotext {
+            line-height: 1.1;
+            margin-left: 20px;  
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        .logotext h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+            font-weight: 900;
+            
+            
+        }
+
+        .logotext span {
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+            font-weight: 700;
             color: black;
-            text-decoration: none;
-            transition: 0.3s;
-            margin: 0px 0px;
+            margin-top: 5%;
         }
+
+        .contact {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: sticky;
+            right: 3px;
+            
         }
+
+        .contact img {
+            margin-top: 25px;
+            width: 35px;
+            margin-bottom: 2px;
+            padding: 0px 10px;
+        }
+
+        .contact p {
+            margin: 0 40px;
+            font-size: 10px;
+            font-weight: 600;
+            
+            
+        }
+
+        .contact span {
+            margin: 0 40px;
+            font-size: 12px;
+            color: #555;
+            
+        } */
+        
+
+        
         body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             background-color: #fff4e3;
             height: 200vh;
-            overflow:hidden;
+            scroll-behavior: smooth;
+            overflow: auto;
+         
             
+        }
+        ::-webkit-scrollbar {
+            display: none;
         }
 
 
@@ -69,6 +151,7 @@
             padding: 15px 20px;
             background-color: #fff4e3;
             border-bottom: 2px solid black;
+            
             
         }
 
@@ -81,42 +164,47 @@
         }
 
         .header .right-logo {
-            padding: 5px 45px;
+            margin-right: 3px;
+            color: #515151;
+            
         }
 
         .logobar {
-            display: flex;
+            display:flex;
             border-bottom: 2px solid black;
             justify-content: space-between;
-            padding: 0px 15px;
+            
+            
         }
 
         .logofield img {
             width: 100px;
+            padding-left: 30px ;
+            
         }
 
         .logotext {
-            text-align: center;
-            flex-grow: 1;
             line-height: 1.1;
-            margin-top: 30px;
+            margin-left: 40px;
+            align-items: center;
+            flex-direction: column;
+            
         }
 
         .logotext h2 {
             font-family: "Poppins", sans-serif;
             font-size: 28px;
-            font-weight: 900;
-            margin-left: 90px;
+            font-weight: 800;
+            
             
         }
 
-        .logotext p {
+        .logotext span {
             font-family: "Poppins", sans-serif;
-            margin-left: 80px;
-            font-size: 15px;
+            font-size: 12px;
             font-weight: 700;
-            color: #555;
-            margin-top: 5px;
+            color: black;
+            margin-top: 5%;
         }
 
         .contact {
@@ -124,24 +212,31 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: sticky;
+            right: 3px;
+            
         }
 
         .contact img {
             margin-top: 25px;
             width: 35px;
             margin-bottom: 2px;
+            padding: 0px 10px;
         }
 
         .contact p {
             margin: 0 40px;
             font-size: 10px;
             font-weight: 600;
+            
+            
         }
 
         .contact span {
             margin: 0 40px;
             font-size: 12px;
             color: #555;
+            
         }
 
         /* NAVIGATION BAR */
@@ -159,7 +254,7 @@
         .navbar-container::-webkit-scrollbar {
             display: none; /* Hide scrollbar for Chrome, Safari */
         }
-
+        
         .navbar {
             display: flex;
             padding: 10px 0;
@@ -167,12 +262,13 @@
 
         .nav-item {
             padding: 10px 26px;
+            margin: 0px 65px;
             font-size: 16px;
             font-weight: 600;
             color: black;
             text-decoration: none;
             transition: 0.3s;
-            margin: 0px 65px;
+            
         }
 
         .nav-item:hover {
@@ -240,6 +336,7 @@
             color: black;
             font-size: 25px;
             text-decoration: none;
+            
         }
 
         .right-card-body a:hover {
@@ -253,6 +350,7 @@
             z-index: 1;
             bottom: 130px;
             right: 10px;
+            
         }
         .footer{
             margin: 0 auto;
@@ -278,18 +376,18 @@
         }
 
         .footer-content button {
-    background: rgba(237, 196, 72, 0.7);
-    font-weight: bold;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 30px;
-    margin-left: 40px;
-    width: 50%;
-    transition: 0.5s;
-    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3), 
-                inset -4px -4px 10px rgba(255, 255, 255, 0.2); 
-}
+            background: rgba(237, 196, 72, 0.7);
+            font-weight: bold;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-left: 40px;
+            width: 50%;
+            transition: 0.5s;
+            box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3), 
+                        inset -4px -4px 10px rgba(255, 255, 255, 0.2); 
+        }
 
 
         .footer-content button:hover{
@@ -334,7 +432,7 @@
                 <a href="index.html" i class="bi bi-arrow-left"></i></a>
             </div>
             <div class="right-logo">
-                <img src="images/teapot 3.svg">
+                <i class="bi bi-bell"></i>
             </div>
         </div>
 
@@ -380,13 +478,13 @@
                     <div>
                         <h2>50B</h2>
                         <a href="#">
-                            <i class="bi bi-plus-square"></i>
+                            <i class="bi bi-plus-circle"></i>
                         </a>
                     </div>
 
                 </div>
             </div>
-
+            
             
             <div class="cart">
                 <a href="#"><img src="images/cart.svg"></a>
@@ -411,17 +509,13 @@
                             <div>
                                 <h2>50B</h2>
                                 <a href="#">
-                                    <i class="bi bi-plus-square"></i>
+                                    <i class="bi bi-plus-circle"></i>
                                 </a>
                             </div>
         
                         </div>
                     </div>
-        
-                    
-                    <div class="cart">
-                        <a href="#"><img src="images/cart.svg"></a>
-                    </div>
+
                 </div>
                         <!-- Menu Item Card -->
         <div class="content row">
@@ -440,17 +534,13 @@
                     <div>
                         <h2>50B</h2>
                         <a href="#">
-                            <i class="bi bi-plus-square"></i>
+                            <i class="bi bi-plus-circle"></i>
                         </a>
                     </div>
 
                 </div>
             </div>
 
-            
-            <div class="cart">
-                <a href="#"><img src="images/cart.svg"></a>
-            </div>
         </div>
 
                 <!-- Menu Item Card -->
@@ -470,16 +560,11 @@
                             <div>
                                 <h2>50B</h2>
                                 <a href="#">
-                                    <i class="bi bi-plus-square"></i>
+                                    <i class="bi bi-plus-circle"></i>
                                 </a>
                             </div>
         
                         </div>
-                    </div>
-        
-                    
-                    <div class="cart">
-                        <a href="#"><img src="images/cart.svg"></a>
                     </div>
                 </div>
 
@@ -500,17 +585,13 @@
                     <div>
                         <h2>50B</h2>
                         <a href="#">
-                            <i class="bi bi-plus-square"></i>
+                            <i class="bi bi-plus-circle"></i>
                         </a>
                     </div>
 
                 </div>
             </div>
 
-            
-            <div class="cart">
-                <a href="#"><img src="images/cart.svg"></a>
-            </div>
         </div>
 
                 <!-- Menu Item Card -->
@@ -530,16 +611,11 @@
                             <div>
                                 <h2>50B</h2>
                                 <a href="#">
-                                    <i class="bi bi-plus-square"></i>
+                                    <i class="bi bi-plus-circle"></i>
                                 </a>
                             </div>
         
                         </div>
-                    </div>
-        
-                    
-                    <div class="cart">
-                        <a href="#"><img src="images/cart.svg"></a>
                     </div>
                 </div>
 
@@ -560,16 +636,11 @@
                     <div>
                         <h2>50B</h2>
                         <a href="#">
-                            <i class="bi bi-plus-square"></i>
+                            <i class="bi bi-plus-circle"></i>
                         </a>
                     </div>
 
                 </div>
-            </div>
-
-            
-            <div class="cart">
-                <a href="#"><img src="images/cart.svg"></a>
             </div>
         </div>
         
