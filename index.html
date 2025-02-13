@@ -17,24 +17,18 @@
             padding: 0;
             box-sizing: border-box;
             overflow: hidden; 
-
-
-            
         }
 
-        @media(min-width: 634px) {
+                @media (max-width: 634px) {
             .menu {
-            display: flex;
-            align-items: center;
-            justify-content:center;
-
-            margin-top: 20px;
-            font-family: "Poppins", serif;
-            font-weight: 500;
-
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+            }
         }
 
-        }
 
         body {
             background-image: url(images/cover.jpg);
@@ -66,12 +60,13 @@
         .menu {
             display: flex;
             align-items: center;
+            justify-content: center;
             margin-top: 20px;
             font-family: "Poppins", serif;
             font-weight: 500;
             position: absolute;
             bottom: 20px;
-            right: 20px;
+            right:100px;
         }
 
         .menu a {
