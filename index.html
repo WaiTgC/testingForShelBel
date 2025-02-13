@@ -20,46 +20,38 @@
         }
 
         @media (max-width: 634px) {
-    body {
-        margin: auto;
-        overflow: hidden;
-    }
 
-    .logo img {
-        width: 300px;
-        height: 300px;
-        margin-top: -80px; /* Move logo higher */
-        transition: 1s;
-    }
+        body{
+            margin:auto;
+            overflow: hidden;
+            
+         }
+        .logo img {
+            width: 300px;
+            height: 300px;
+            margin-top: -50px;
+            transition: 1s;
+                        
+                    }
+            .menu {
+                position: absolute;
+                top: 400px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+            }
+            .menu i {
+                font-size: 90px;
+                color:#FBB708;
+                width: 100px;  
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 0px; 
+            }
 
-    .menu {
-        position: absolute;
-        top: 420px; /* Adjusted for better alignment */
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        display: flex;
-        align-items: center; /* Ensures menu text and arrow are aligned */
-        gap: 5px; /* Keeps small spacing between text and arrow */
-    }
-
-    .menu i {
-        font-size: 50px; /* Adjusted size to match text */
-        color: #FBB708;
-        width: auto; /* Adjust width naturally */
-        height: auto; /* Ensures proper aspect ratio */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .menu a {
-        font-size: 32px;
-        color: #FBB708;
-        text-decoration: none;
-    }
-}
-
+        }
 
 
         body {
