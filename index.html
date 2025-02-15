@@ -16,6 +16,7 @@
         }
 
         body {
+            background-color: #7d6425;
             background-image: url(images/cover.jpg);
             background-size: cover;
             background-position: center;
@@ -46,6 +47,7 @@
             gap: 6px;
             position: absolute;
             bottom: 50px;
+            right: 30px;
             
         }
 
@@ -59,7 +61,7 @@
         }
 
         .menu img { 
-            width: 20px;
+            width: 80px;
             height: auto;
         }
 
@@ -76,6 +78,9 @@
                 bottom: 20px;
                 display: flex;
                 flex-direction: column;
+                bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
             }
 
             .menu a {
@@ -90,6 +95,8 @@
 
         /* Tablets (481px - 1024px) */
         @media (min-width: 481px) and (max-width: 1024px) {
+            
+            }
             .logo img {
                 width: 160px;
                 margin-bottom: 50px;
@@ -100,6 +107,9 @@
                 bottom: 20px;
                 display: flex;
                 flex-direction: column;
+                
+            transform: translateX(-50%);
+                
             }
 
             .menu a {
