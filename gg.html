@@ -21,10 +21,13 @@
 
         
         @media (max-width: 480px) {
+            
     body {
-        margin: auto;
+        margin: 0;
+        padding: 0;
+        width: 100%;
         overflow-x: hidden;
-    }
+        }
     .menu {
         position: absolute;
         bottom: 10px;
@@ -68,6 +71,7 @@
         
     }
     .contact{
+        
         transform: translate(15%);
         height: 108px;
     }
@@ -96,22 +100,21 @@
         font-size: 14px !important;
         margin: 0px  -20px !important;
     }
-    .right-card-body a{
-        transform: scale(0.1);
-    }
+   
     .content{
         
         margin: -30px 0px;
     }
     .card{
         
-        padding: 0px 0px  !important;
-        width: 420px !important;
+        /* padding: 0px 0px  !important;
+        width: 420px !important; */
         margin-bottom: 30px;
+        width: 100%;
         
     }
     .card img {
-        width: 70px !important;
+
         
         
     }
@@ -209,7 +212,6 @@
         body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             background-color: #fff4e3;
             height: 200vh;
             scroll-behavior: smooth;
@@ -228,7 +230,7 @@
             align-items: center;
             padding: 15px 20px;
             background-color: #fff4e3;
-            border-bottom: 2px solid black;
+            border-bottom: 1px solid black;
             
             
         }
@@ -236,7 +238,7 @@
         .header .left-logo a , i{
             font-size: 35px;
             padding: 5px 20px;
-            color: var(--text-color);
+            color: black;
             text-decoration: none;
             
         }
@@ -251,7 +253,7 @@
             display:flex;
             align-items: center;
             height: 100px;
-            border-bottom: 2px solid black;
+            border-bottom: 1px solid black;
             justify-content: space-between;
             
             
@@ -293,8 +295,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: sticky;
-            right: 3px;
+            margin-right: 3px
             
         }
 
@@ -370,7 +371,7 @@
         }
 
         .card {
-            background-color: #F0DFC6;
+            background-color: rgba(240, 223, 198, 0.8);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -500,8 +501,8 @@
             font-size: 2rem;
             color: #333;
             transition: 0.5s;
-            margin: 0; /* Remove margins */
-            padding: 0; /* Ensure no extra space */
+            margin: 0; 
+            padding: 0; 
         }
 
        
