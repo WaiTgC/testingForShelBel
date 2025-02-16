@@ -112,7 +112,6 @@
     }
     .nav-item {
         font-size: 13px !important;
-        margin: 0px -15px !important;
     }
    
     .content{
@@ -128,8 +127,13 @@
         
     }
     .card .left-card-body img{
+        background-color: #fff4e3;
+        position: relative;
+        right: 45px;
+        bottom: 20px;
         width: 65px;
-        margin: 10px 0px;
+        margin: 10px 10px;
+        border-radius: 180px;
         display: flex
 
         
@@ -139,33 +143,37 @@
         }
     .footer{
         display: flex !important;
-        flex-direction: column !important ;
-        height: 100px !important;
+        height: 50px !important;
+        justify-content: center !important;
+        align-items: center;
         
     }
 
-    .footer-content button{
+
+    /* .footer-content  button{
         position: relative;
         border-radius: 10px !important;
         height: 35px;
         width: 100%;
         font-size: clamp(1px, 2vw, 100px);
-        padding: 0px 20px !important;
         white-space: nowrap; 
-        margin: 0px;
-        display: block;
-        align-items: center;
-        justify-content: center;
+        margin: 0px 10px;
+        
 
        
     }
+    .footer-content a{
+        display: flex;
+        text-decoration: none;
+        
+    }
     button.today{
-        padding: 0px 40px !important;
+        padding: 0px 30px !important;
     } 
     button.combo{
-        padding: 0px 52px !important;
+        padding: 0px 41px !important;
         
-    } 
+    }  */
 
     .social-contact {
         display: flex;
@@ -173,8 +181,7 @@
         font-size: 18px;
         color: #333;
         position: relative;
-        bottom: 35px;
-        right:10px;
+        right:25px;
         transform: scale(0.6);
     }
 
@@ -340,11 +347,10 @@
         /* NAVIGATION BAR */
         .navbar-container {
             font-family: "Poppins", sans-serif;
-            overflow-x: auto;
-            white-space: nowrap;
             width: 100%;
             background-color: #f2d279;
             display: flex;
+            justify-content: center;
             scrollbar-width: none; /* Hide scrollbar for Firefox */
             -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
         }
@@ -355,6 +361,8 @@
         
         .navbar {
             display: flex;
+            justify-items: center;
+            align-items: center;
             padding: 10px 0px;
         }
 
@@ -390,7 +398,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 10px 20px;
-            border-radius: 10px;
+            border: 1px solid black;
             width: 90%;
             max-width: 634px;
         }
@@ -449,7 +457,7 @@
             border-radius: 50%;
             position: fixed;
             z-index: 1;
-            bottom: 100px;
+            bottom: 120px;
             right: 5px;
             
             
@@ -457,7 +465,7 @@
         .footer{
             margin: 0px auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             background-color: #fff4e3;
             height: 120px;
             position: fixed;
@@ -467,17 +475,18 @@
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 
                 inset 0 -2px 5px rgba(255, 255, 255, 0.9); 
             border-radius: 10px;
+            white-space: ;
         }
-        .footer-content {
+        /* .footer-content {
             display: flex;
             justify-content: center;
             margin-top: 20px ;
             margin-right: 20px;
             
-        }
+        } */
         
 
-        .footer-content button {
+        /* .footer-content button {
             background: rgba(237, 196, 72, 0.7);
             font-weight: bold;
             border: none;
@@ -496,13 +505,15 @@
         .footer-content button:hover{
             
             filter: brightness(1.1) drop-shadow(1px 1px 2px #515151);
-        }
+        } */
 
 
         .social-contact {
             display: flex;
             align-items: center;
             margin-right: 40px;
+            padding: 0px !important;
+            margin: 0px !important;
         }
 
         .social-contact p {
@@ -710,10 +721,10 @@
         </div>
                
         <section class="footer">
-            <div class="footer-content">
-               <button class="today" style="color:#000;">TODAY'S SPECIALS</button>
-               <button class="combo" style="color:#000;">COMBO SETS</button>
-            </div>
+            <!-- <div class="footer-content">
+               <a href="today.html"><button class="today" style="color:#000;">TODAY'S SPECIALS</button></a>
+               <a href="#"><button class="combo" style="color:#000;">COMBO SETS</button></a>
+            </div> -->
             <div class="social-contact">
                 <p>Follow us on</p>
                 <a class="ig"  href="#"><i class="bi bi-instagram"></i>
