@@ -18,18 +18,19 @@
             
 
         }
+        
 
         
     @media (max-width: 480px) {
 
     .container {
-            
-            overflow-x: hidden;
+            overflow: visible;
             scroll-behavior: smooth;
         }
 
             
     body {
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -99,6 +100,7 @@
         top: 0px;
         
         
+        
     }
     .navbar {
         display: flex;
@@ -109,8 +111,8 @@
         
     }
     .nav-item {
-        font-size: 14px !important;
-        margin: 0px -20px !important;
+        font-size: 13px !important;
+        margin: 0px -15px !important;
     }
    
     .content{
@@ -126,12 +128,15 @@
         
     }
     .card .left-card-body img{
-        width: 70px;
+        width: 65px;
         margin: 10px 0px;
         display: flex
 
         
     }
+    .right-card-body  i{
+            font-size: 20px !important;
+        }
     .footer{
         display: flex !important;
         flex-direction: column !important ;
@@ -225,7 +230,6 @@
             background-color: #fff4e3;
             height: 200vh;
             scroll-behavior: smooth;
-            overflow: auto;
          
             
         }
@@ -246,14 +250,15 @@
         }
 
         .header .left-logo a , i{
-            font-size: 35px;
+            font-size: 30px;
             padding: 5px 20px;
-            color: black;
+            color: #515151;
             text-decoration: none;
+            border: none;
             
         }
 
-        .header .right-logo {
+        .header .right-logo i{
             margin-right: 3px;
             color: #515151;
             
@@ -524,7 +529,7 @@
     </style>
 </head>
 <body>
-    <div class="">
+    <div class="container">
         <div class="header">
             <div class="left-logo">
                 <a href="index.html" i class="bi bi-arrow-left"></i></a>
@@ -552,7 +557,7 @@
         <div class="navbar-container">
             <div class="navbar">
                 <a class="nav-item" href="#">Popular Picks</a>
-                <a class="nav-item" href="#">Burmese Specials</a>
+                <a class="nav-item" href="#ra">Burmese Specials</a>
                 <a class="nav-item" href="#">Burmese Salads</a>
                 <a class="nav-item" href="#">Burmese Snacks</a>
                 <a class="nav-item" href="#">Drinks</a>
@@ -683,7 +688,7 @@
             </div>
 
         </div><div class="content">
-            <div class="card ">
+            <div class="card " id="ra">
                 <div class="left-card-body ">
                     <img src="images/rice_noodle.png">
                 </div>

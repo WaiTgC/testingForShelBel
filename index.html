@@ -16,7 +16,7 @@
         }
 
         body {
-            background-color: #7d6425;
+            
             background-image: url(images/cover.jpg);
             background-size: cover;
             background-position: center;
@@ -70,17 +70,18 @@
         /* Phones (max 480px) */
         @media (max-width: 480px) {
             .logo img {
-                width: 150px;
-                margin-bottom: 40px;
+                width: 200px !important;
+                margin-bottom: 65px !important;
             }
 
             .menu {
-                bottom: 20px;
+                position: fixed !important;
+                bottom: 20px ;
                 display: flex;
                 flex-direction: column;
                 bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
+                left: 50%;
+                transform: translateX(-50%);
             }
 
             .menu a {
