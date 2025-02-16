@@ -16,7 +16,8 @@
         }
 
         body {
-            background-color: #926e16;
+            border-image: repeat;
+            background-color: #543f09;
             background-image: url(images/cover.jpg);
             background-size: cover;
             background-position: center;
@@ -73,13 +74,12 @@
 
         /* Phones (max 480px) */
         @media (max-width: 480px) {
-            body{
-                overflow-x: hidden;
-                background-size: 900px 650px ;
+            *{
+                overflow: hidden;
             }
             .logo img {
                 width: 200px !important;
-                margin-bottom: 65px !important;
+                margin-bottom: 110px !important;
             }
 
             .menu {
