@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- bootstrap cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+
+        }
+        
+
+        
+    @media (max-width: 480px) {
+
+    .container {
+            overflow: visible;
+            scroll-behavior: smooth;
+        }
+
+            
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        
+        
+        }
+    .menu {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .header .left-logo{
+        transform: translate(-20%);
+    }
+    .header .right-logo{
+        transform: translate(20%);
+        
+    }
+    .logobar{
+        height: 70px !important;
+        
+    }
+    .logofield img{
+        transform: translateX(-20%);
+        width: 100px !important;
+        
+        
+        
+    }
+    .logotext {
+        transform: translate(20%) scale(2.3);
+        
+        
+    }
+    .logotext  h2 {
+         font-size: 11px !important;
+         text-shadow: 0.3px 0px 0px ;
+        
+    }
+    .logotext span{
+        font-size: 4px !important
+        
+    }
+    .contact{
+        
+        transform: translate(15%);
+        height: 108px;
+    }
+    .contact img{
+        margin-top: 30px !important ;
+    }
+    .contact p {
+        transform: scale(0.9);
+        position: relative;
+        top: -7px;
+    }
+    .contact span {
+        transform: scale(1.1);
+        position: relative;
+        top: -7px;
+    }
+    .navbar-container{
+        
+        position: sticky ;
+        top: 0px;
+        
+        
+        
+    }
+    .navbar {
+        display: flex;
+        padding: 5px 10px !important;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 0px;
+        
+    }
+    .nav-item {
+        font-size: 13px !important;
+        margin: 0px -15px !important;
+    }
+   
+    .content{
+        
+        margin: -30px 0px;
+    }
+    .card{
+        margin: 0px 15px;
+        padding: 0px 20px  !important;
+        max-width: 350px !important;
+        margin-bottom: 30px;
+        
+        
+    }
+    .card .left-card-body img{
+        width: 65px;
+        margin: 10px 0px;
+        display: flex
+
+        
+    }
+    .right-card-body  i{
+            font-size: 20px !important;
+        }
+    .footer{
+        display: flex !important;
+        flex-direction: column !important ;
+        height: 100px !important;
+        
+    }
+
+    .footer-content button{
+        position: relative;
+        border-radius: 10px !important;
+        height: 35px;
+        width: 100%;
+        font-size: clamp(1px, 2vw, 100px);
+        padding: 0px 20px !important;
+        white-space: nowrap; 
+        margin: 0px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+
+       
+    }
+    button.today{
+        padding: 0px 40px !important;
+    } 
+    button.combo{
+        padding: 0px 52px !important;
+        
+    } 
+
+    .social-contact {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        color: #333;
+        position: relative;
+        bottom: 35px;
+        right:10px;
+        transform: scale(0.6);
+    }
+
+    .social-contact p {
+        font-size: 11px;  
+        margin: 0px; 
+    }
+
+    .social-contact a {
+        font-size: 16px;  /* Reduced font size for the icons */
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transform: scale(0.6);
+        
+        
+        
+    }
+    .social-contact p{
+        position: relative;
+        left: 90px;
+    }
+
+    .social-contact .ig{
+        position: relative;
+        left: 70px;
+    }
+    .social-contact .fb{
+        position: relative;
+        left: 25px;
+    }
+
+
+
+    .cart img{
+        width: 35px;
+    
+    }
+    
+    
+}
+
+        
+
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff4e3;
+            height: 200vh;
+            scroll-behavior: smooth;
+         
+            
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #fff4e3;
+            border-bottom: 1px solid black;
+            
+            
+        }
+
+        .header .left-logo a , i{
+            font-size: 30px;
+            padding: 5px 20px;
+            color: #515151;
+            text-decoration: none;
+            border: none;
+            
+        }
+
+        .header .right-logo i{
+            margin-right: 3px;
+            color: #515151;
+            
+        }
+
+        .logobar {
+            display:flex;
+            align-items: center;
+            height: 100px;
+            border-bottom: 1px solid black;
+            justify-content: space-between;
+            
+            
+        }
+
+        .logofield img {
+            width: 120px;
+            padding-left: 30px ;
+            
+        }
+
+        .logotext {
+            display: flex;
+            line-height: 1;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        .logotext h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            
+            
+        }
+
+        .logotext span {
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: black;
+            margin-top: 5%;
+        }
+
+        .contact {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 3px
+            
+        }
+
+        .contact img {
+            margin-top: 25px;
+            width: 35px;
+            margin-bottom: 2px;
+            padding: 0px 10px;
+        }
+
+        .contact p {
+            padding-top: 10px;
+            margin: 0 40px;
+            font-size: 10px;
+            font-weight: 600;
+            
+            
+        }
+
+        .contact span {
+            text-decoration: none;
+            margin: 0 40px;
+            font-size: 10px;
+            color: #555;
+            
+        }
+
+        /* NAVIGATION BAR */
+        .navbar-container {
+            font-family: "Poppins", sans-serif;
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 100%;
+            background-color: #f2d279;
+            display: flex;
+            scrollbar-width: none; /* Hide scrollbar for Firefox */
+            -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+        }
+
+        .navbar-container::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for Chrome, Safari */
+        }
+        
+        .navbar {
+            display: flex;
+            padding: 10px 0px;
+        }
+
+        .nav-item {
+            padding: 10px 26px;
+            margin: 0px 65px;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+            text-decoration: none;
+            transition: 0.3s;
+            
+        }
+
+        .nav-item:hover {
+            color: white;
+        }
+
+        /* CONTENT CARD */
+        .content {
+            font-family: "M PLUS 1p", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            width: 100%;
+            
+        }
+
+        .card {
+            background-color: rgba(240, 223, 198, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 634px;
+        }
+        .card:hover{
+            filter: brightness(0.98);
+            
+        }
+
+        .left-card-body img {
+            width: 80px;
+            height: auto;
+        }
+
+        .mid-card-body {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .mid-card-body h2 {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .mid-card-body p {
+            font-size: 10px;
+            
+            color: #333;
+            margin: 0;
+        }
+
+        .right-card-body {
+            text-align: center;
+        }
+
+        .right-card-body h2 {
+            font-size: 16px;
+            font-weight: 700;
+
+        }
+
+        .right-card-body a {
+            color: black;
+            text-decoration: none;
+            
+        }
+        .right-card-body  i{
+            font-size: 25px;
+        }
+
+        .right-card-body a:hover {
+            color: white;
+        }
+        .cart{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: fixed;
+            z-index: 1;
+            bottom: 100px;
+            right: 5px;
+            
+            
+        }
+        .footer{
+            margin: 0px auto;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff4e3;
+            height: 120px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            align-items: center;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 
+                inset 0 -2px 5px rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px ;
+            margin-right: 20px;
+            
+        }
+        
+
+        .footer-content button {
+            background: rgba(237, 196, 72, 0.7);
+            font-weight: bold;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 40px;
+            margin-left: 20px;
+            margin-bottom:25px;
+            width: 100%;
+            transition: 0.5s;
+            box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3), 
+                        inset -4px -4px 10px rgba(255, 255, 255, 0.2); 
+        }
+
+
+        .footer-content button:hover{
+            
+            filter: brightness(1.1) drop-shadow(1px 1px 2px #515151);
+        }
+
+
+        .social-contact {
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+        }
+
+        .social-contact p {
+            margin-right: 10px;
+            color: #333;
+        }   
+
+        .social-contact .ig,
+        .social-contact .fb {
+            font-size: 2rem;
+            color: #333;
+            transition: 0.5s;
+            margin: 0; 
+            padding: 0; 
+        }
+
+       
+        .social .a:hover{
+            filter: brightness(1.4);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left-logo">
+                <a href="index.html" i class="bi bi-arrow-left"></i></a>
+            </div>
+            <div class="right-logo">
+                <i class="bi bi-bell"></i>
+            </div>
+        </div>
+
+        <div class="logobar">
+            <div class="logofield">
+                <img src="images/logo.svg">
+            </div>
+            <div class="logotext" style="text-align:center; align-self:center">
+                <h2>SHAL PAL</h2>
+                <span>Tea House</span>
+            </div>
+            <div class="contact">
+                <img src="images/telephone 1.svg">
+                <p>CONTACT US</p>
+                <span>06-3849-2363</span>
+            </div>
+        </div>
+
+        <div class="navbar-container">
+            <div class="navbar">
+                <a class="nav-item" href="#">TODAY SPECIAL'S</a>
+                
+            </div>
+        </div>
+
+        <!-- Menu Item Card -->
+        <div class="content ">
+            <div class="card">
+                <div class="left-card-body ">
+                    <img src="images/mohinga.svg">
+                </div>
+                <div class="mid-card-body ">
+                    <div>
+                        <h2>Mohinga</h2>
+                        <p>Traditional Burmese Noodle Soup</p>
+                    </div>
+
+                </div>
+                <div class="right-card-body ">
+                    <div>
+                        <h2>50B</h2>
+                        <a href="#">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </div>
+
+                </div>
+                
+            </div>
+            
+            
+            
+            <div class="cart">
+                <a href="#"><img src="images/cart.svg"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card ">
+                <div class="left-card-body ">
+                    <img src="images/rice_noodle.png">
+                </div>
+                <div class="mid-card-body ">
+                    <div>
+                        <h2>Rakhine Rice Noodle Soup</h2>
+                        <p>Traditional Burmese Noodle Soup</p>
+                    </div>
+
+                </div>
+                <div class="right-card-body ">
+                    <div>
+                        <h2>50B</h2>
+                        <a href="#">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div><div class="content">
+            <div class="card ">
+                <div class="left-card-body ">
+                    <img src="images/rice_noodle.png">
+                </div>
+                <div class="mid-card-body ">
+                    <div>
+                        <h2>Rakhine Rice Noodle Soup</h2>
+                        <p>Traditional Burmese Noodle Soup</p>
+                    </div>
+
+                </div>
+                <div class="right-card-body ">
+                    <div>
+                        <h2>50B</h2>
+                        <a href="#">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div><div class="content">
+            <div class="card ">
+                <div class="left-card-body ">
+                    <img src="images/rice_noodle.png">
+                </div>
+                <div class="mid-card-body ">
+                    <div>
+                        <h2>Rakhine Rice Noodle Soup</h2>
+                        <p>Traditional Burmese Noodle Soup</p>
+                    </div>
+
+                </div>
+                <div class="right-card-body ">
+                    <div>
+                        <h2>50B</h2>
+                        <a href="#">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div><div class="content">
+            <div class="card ">
+                <div class="left-card-body ">
+                    <img src="images/rice_noodle.png">
+                </div>
+                <div class="mid-card-body ">
+                    <div>
+                        <h2>Rakhine Rice Noodle Soup</h2>
+                        <p>Traditional Burmese Noodle Soup</p>
+                    </div>
+
+                </div>
+                <div class="right-card-body ">
+                    <div>
+                        <h2>50B</h2>
+                        <a href="#">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div><div class="content">
+            <div class="card " id="ra">
+                <div class="left-card-body ">
+                    <img src="images/rice_noodle.png">
+                </div>
+                <div class="mid-card-body ">
+                    <div>
+                        <h2>Rakhine Rice Noodle Soup</h2>
+                        <p>Traditional Burmese Noodle Soup</p>
+                    </div>
+
+                </div>
+                <div class="right-card-body ">
+                    <div>
+                        <h2>50B</h2>
+                        <a href="#">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+               
+        <section class="footer">
+            <div class="footer-content">
+               <button class="today" style="color:#000;">TODAY'S SPECIALS</button>
+               <button class="combo" style="color:#000;">COMBO SETS</button>
+            </div>
+            <div class="social-contact">
+                <p>Follow us on</p>
+                <a class="ig"  href="#"><i class="bi bi-instagram"></i>
+                </a>
+                <a class="fb"  href="#"><i class="bi bi-facebook"></i>
+                </a>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

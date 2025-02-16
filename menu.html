@@ -24,12 +24,13 @@
     @media (max-width: 480px) {
 
     .container {
+            overflow: visible;
             scroll-behavior: smooth;
         }
 
             
     body {
-        background-color: #fff4e3;
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -143,26 +144,29 @@
         
     }
 
-    .footer-content button{
+
+    .footer-content  button{
         position: relative;
         border-radius: 10px !important;
         height: 35px;
         width: 100%;
         font-size: clamp(1px, 2vw, 100px);
-        padding: 0px 20px !important;
         white-space: nowrap; 
-        margin: 0px;
-        display: block;
-        align-items: center;
-        justify-content: center;
+        margin: 0px 10px;
+        
 
        
     }
+    .footer-content a{
+        display: flex;
+        text-decoration: none;
+        
+    }
     button.today{
-        padding: 0px 40px !important;
+        padding: 0px 30px !important;
     } 
     button.combo{
-        padding: 0px 52px !important;
+        padding: 0px 41px !important;
         
     } 
 
@@ -713,8 +717,8 @@
                
         <section class="footer">
             <div class="footer-content">
-               <button class="today" style="color:#000;">TODAY'S SPECIALS</button>
-               <button class="combo" style="color:#000;">COMBO SETS</button>
+               <a href="today.html"><button class="today" style="color:#000;">TODAY'S SPECIALS</button></a>
+               <a href="#"><button class="combo" style="color:#000;">COMBO SETS</button></a>
             </div>
             <div class="social-contact">
                 <p>Follow us on</p>
