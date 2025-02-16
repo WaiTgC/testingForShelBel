@@ -20,13 +20,21 @@
         }
 
         
-        @media (max-width: 480px) {
+    @media (max-width: 480px) {
+
+    .container {
+            
+            /* overflow-x: hidden; */
+            scroll-behavior: smooth;
+        }
+
             
     body {
         margin: 0;
         padding: 0;
         width: 100%;
-        overflow-x: hidden;
+        
+        
         }
     .menu {
         position: absolute;
@@ -86,9 +94,10 @@
         top: -7px;
     }
     .navbar-container{
-        position: sticky;
+        
+        position: sticky ;
         top: 0px;
-        overflow: hidden;
+        
         
     }
     .navbar {
@@ -146,10 +155,10 @@
        
     }
     button.today{
-        padding: 0px 30px !important;
+        padding: 0px 40px !important;
     } 
     button.combo{
-        padding: 0px 42px !important;
+        padding: 0px 52px !important;
         
     } 
 
@@ -435,8 +444,8 @@
             border-radius: 50%;
             position: fixed;
             z-index: 1;
-            bottom: 120px;
-            right: 15px;
+            bottom: 100px;
+            right: 5px;
             
             
         }
