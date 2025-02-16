@@ -54,20 +54,17 @@
         
     }
     .logotext {
-        transform: translate(-20%) scale(2.3);
-        
+        transform: translate(20%) scale(2.3);
         
         
     }
     .logotext  h2 {
          font-size: 11px !important;
-         font-weight: 900 !important;
-         
+         text-shadow: 0.3px 0px 0px ;
         
     }
     .logotext span{
-        font-size: 4px !important;
-        font-weight: 400px !important;
+        font-size: 4px !important
         
     }
     .contact{
@@ -88,6 +85,12 @@
         position: relative;
         top: -7px;
     }
+    .navbar-container{
+        position: sticky;
+        top: 0px;
+        overflow: hidden;
+        
+    }
     .navbar {
         display: flex;
         padding: 5px 10px !important;
@@ -107,27 +110,26 @@
     }
     .card{
         
-        /* padding: 0px 0px  !important;
-        width: 420px !important; */
+        padding: 0px 10px  !important;
+        width: 380px !important;
         margin-bottom: 30px;
-        width: 100%;
+        
         
     }
-    .card img {
+    .card .left-card-body img{
+        width: 70px;
+        margin: 10px 0px;
+        display: flex
 
-        
         
     }
     .footer{
         display: flex !important;
         flex-direction: column !important ;
-           
+        justify-content: center;
+        
     }
     .footer-content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0px;
         
         
     }
@@ -137,10 +139,12 @@
         height: 35px;
         width: 100%;
         font-size: clamp(1px, 2vw, 100px);
-        margin-right: 40px;
         padding: 0px 20px !important;
         white-space: nowrap; 
         margin: 0px;
+        display: block;
+        align-items: center;
+        justify-content: center;
 
        
     }
@@ -149,52 +153,53 @@
     } 
     button.combo{
         padding: 0px 42px !important;
-        margin-right: 38px;
+        margin-right: 20px;
+        
     } 
 
     .social-contact {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    color: #333;
-    position: relative;
-    bottom: 35px;
-    right:10px;
-    transform: scale(0.6);
-}
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        color: #333;
+        position: relative;
+        bottom: 35px;
+        right:10px;
+        transform: scale(0.6);
+    }
 
-.social-contact p {
-    font-size: 11px;  
-    margin: 0px; 
-}
+    .social-contact p {
+        font-size: 11px;  
+        margin: 0px; 
+    }
 
-.social-contact a {
-    font-size: 16px;  /* Reduced font size for the icons */
-    text-decoration: none;
-    color: #333;
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transform: scale(0.6);
-    
-    
-    
-}
-.social-contact p{
-    position: relative;
-    left: 90px;
-}
+    .social-contact a {
+        font-size: 16px;  /* Reduced font size for the icons */
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transform: scale(0.6);
+        
+        
+        
+    }
+    .social-contact p{
+        position: relative;
+        left: 90px;
+    }
 
-.social-contact .ig{
-    position: relative;
-    left: 70px;
-}
-.social-contact .fb{
-    position: relative;
-    left: 25px;
-}
+    .social-contact .ig{
+        position: relative;
+        left: 70px;
+    }
+    .social-contact .fb{
+        position: relative;
+        left: 25px;
+    }
 
 
 
@@ -268,7 +273,6 @@
         .logotext {
             display: flex;
             line-height: 1;
-            margin-left: 40px;
             align-items: center;
             flex-direction: column;
             
@@ -371,12 +375,12 @@
         }
 
         .card {
-            background-color: rgba(240, 223, 198, 0.8);
+            background-color: rgba(240, 223, 198, 0.5);
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 10px 20px;
-            border-radius: 20px;
+            border-radius: 10px;
             width: 90%;
             max-width: 634px;
         }
@@ -396,14 +400,13 @@
         }
 
         .mid-card-body h2 {
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 16px;
             margin: 5px 0;
         }
 
         .mid-card-body p {
             font-size: 10px;
-            font-weight: 550;
+            
             color: #333;
             margin: 0;
         }
@@ -413,7 +416,7 @@
         }
 
         .right-card-body h2 {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
 
         }
@@ -436,13 +439,13 @@
             border-radius: 50%;
             position: fixed;
             z-index: 1;
-            bottom: 130px;
-            right: 10px;
+            bottom: 120px;
+            right: 15px;
             
             
         }
         .footer{
-            margin: 0 auto;
+            margin: 0px auto;
             display: flex;
             justify-content: space-between;
             background-color: #fff4e3;
@@ -459,6 +462,7 @@
             display: flex;
             justify-content: center;
             margin-top: 20px ;
+            margin-right: 20px;
             
         }
         
@@ -469,9 +473,9 @@
             border: none;
             padding: 10px 15px;
             cursor: pointer;
-            border-radius: 30px;
-            margin-left: 40px;
-            margin-bottom: 25px;
+            border-radius: 40px;
+            margin-left: 20px;
+            margin-bottom:25px;
             width: 100%;
             transition: 0.5s;
             box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3), 
